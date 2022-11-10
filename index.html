@@ -1,0 +1,100 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Penuel John · Founder, Philosopher, Programmer</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="keywords" content="Penuel John, John Penuel, Ziptwo, Ziptwo Founder, Penuel Jhon"/>
+		<meta property="og:title" content="Penuel John">
+		<meta property="og:description" content="Penuel John website">
+		<meta property="og:type" content="website">
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="shortcut icon" href="./assets/css/images/favicon.ico" type="image/x-icon">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload" style="background-color: rgb(18, 18, 18);">
+
+		<div id="wrapper">
+			<!-- expand modal -->
+		        <div class="expand-modal" id="modal">
+			        <!-- content -->
+					<div class="header-modal">
+						<div class="icon-container">
+							<i class="bi bi-x-circle-fill circle-icon" title="Close" id="closeBtn"></i>
+						</div>
+					</div>
+					<div class="modal-content">
+						<div>
+							<div>
+								<img src="./assets/css/images/penuel-img.jpg" class="expanded-img">
+							</div>
+							<div>
+								<div class="flex-us">
+									<div>
+										<li class="li-x" title="Penuel John Twitter"><a href="https://www.twitter.com/johnpenuel_" target="_blank" class="icon brands fa-twitter a-x"><span class="label">Twitter</span></a></li>
+									</div>
+									<div>
+										<li class="li-x" title="Penuel John Email"><a href="mailto:johnpenuel01@gmail.com" target="_blank" class="icon solid fa-envelope a-x"><span class="label">Email</span></a></li>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+		        </div>
+		    <!-- expand modal -->
+
+			<div id="main">
+
+				<!-- Header -->
+					<header id="header">
+						<img src="./assets/css/images/penuel-img.jpg" class="img-class" title="Tap for larger view" id="imageTap">
+						<h1>Penuel John</h1>
+						<p>Founder 
+							<span><a class="a" href="https://www.twitter.com/ziptwohq" target="_blank" title="Ziptwo Twitter Profile">@ZiptwoHQ</a></span> 
+							&nbsp;&bull;&nbsp; Philosopher &nbsp;&bull;&nbsp; Programmer
+						</p>
+						<p class="p-class">Connect with me or send a message on:</p>
+						<nav id="nav">
+							<ul>
+								<li title="Penuel John Twitter"><a href="https://www.twitter.com/johnpenuel_" target="_blank" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+								<li title="Penuel John Email"><a href="mailto:johnpenuel01@gmail.com" target="_blank" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<span class="copyright">&copy;&nbsp;<script>document.write(new Date().getFullYear())</script>&nbsp; Copyright, Penuel John.</span>
+					</footer>
+
+			</div>
+		</div>
+		<script>
+			window.onload = function() { document.body.classList.remove('is-preload'); }
+			window.ontouchmove = function() { return false; }
+			window.onorientationchange = function() { document.body.scrollTop = 0; }
+
+			//js for modal view
+			var imageTap = document.getElementById('imageTap');
+			var nav = document.getElementById('nav');
+			var closeBtn = document.getElementById('closeBtn');
+			var modal = document.getElementById('modal');
+
+			function openModal(){
+				modal.style.display='block';
+				nav.style.visibility='hidden';
+				imageTap.style.visibility='hidden';
+			}
+
+			function closeModal(){
+				modal.style.display='none';
+				imageTap.style.visibility='visible';
+				nav.style.visibility='visible';
+			}
+
+			imageTap.addEventListener("click", openModal);
+			closeBtn.addEventListener("click", closeModal);
+		</script>
+	</body>
+</html>
